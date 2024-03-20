@@ -1,5 +1,3 @@
-#webprogramming_week2
-
 <!DOCTYPE html>
 <html>
     <title>HTML TEXT Basic Page</title>
@@ -44,5 +42,96 @@
     <hr>
     <b>lorem ipsum dolor sit amet</b>
 
+    <ul>
+        <!----first list---->
+        <li>
+            <b>fruit</b>
+            <ol>
+                <li>apple</li>
+                <li>pear</li>
+            </ol>
+        </li>
+            <!----second list---->
+        <li>
+            <b>vegi</b>
+            <ol>
+                <li>cucumber</li>
+                <li>egg plant</li>
+            </ol>
+        </li>
+    </ul>
+
+<ul>
+    <li>
+        <b>Github</b>
+        <ul>
+        <li><a href="https://github.com/javis426/effortmakesconfident/tree/main">github</a></li>
+        </ul>
+    </li>
+</ul>
+
+<hr>
+
+<h1>24-2</h1>
+
+<table border="1">
+    <thread>
+        <tr>
+            <th></th>
+            <th>mon</th>
+            <th>tue</th>
+            <th>wed</th>
+            <th>thur</th>
+            <th>fri</th>
+
+        </tr>
+    </thread>
+    <tbody> <!---굳이안넣어도됨---> 
+        <tr>
+            <td>morn</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td>1st</td>
+            <td>WS</td>
+            <td>DS</td>
+            <td>BC</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2nd</td>
+            <td>IT</td>
+            <td></td>
+            <td>WPB</td>
+            <td>PPr</td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td>3rd</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td>4th</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+    </tbody> <!---굳이안넣어도됨---> 
+</table>
 </body>
 </html>
