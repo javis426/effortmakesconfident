@@ -1,0 +1,48 @@
+#webprogramming_week2
+
+<!DOCTYPE html>
+<html>
+    <title>HTML TEXT Basic Page</title>
+</head>
+<body>
+    <h1>&nbsp;홍차&nbsp;</h1>
+    <hr>
+    <h2>definition</h2>
+    <p> oolong&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&amp; gong cha </p>
+    <p>texttexttexttxtdubyduby</p>
+    <p>ooolallalalllalaoooallalal ooalllalal ooolalall oalllaov laoalll</p>
+    <br>
+    <h2>rate</h2>
+    <p>어쩌ㅗ저쩌고블라블라블랍르</p>
+    <a href="https://github.com/javis426/effortmakesconfident/tree/main">github</a>
+    <hr>
+    <a href="#alpha">Alpha part</a>
+    <a href="#beta">Beta part</a>
+    <hr>
+    <h1 id="alpha">Alpha</h1>
+    <i>
+    <h1><p>fefefwefwfe ewrwer erwerwerwrw ewrwr wwrwrwerw rwererwr ewrwerwerewrewr</p></h1>
+    <p>fefefwefwfe ewrwer erwerwerwrw ewrwr wwrwrwerw rwererwr ewrwerwerewrewr</p>
+    <p>fefefwefwfe ewrwer erwerwerwrw ewrwr wwrwrwerw rwererwr ewrwerwerewrewr</p>
+    </i>
+    <h1 id="beta">Beta</h1>
+    <p>fefefwefwfe ewrwer erwerwerwrw ewrwr wwrwrwerw rwererwr ewrwerwerewrewr</p>
+    <p>fefefwefwfe ewrwer erwerwerwrw ewrwr wwrwrwerw rwererwr ewrwerwerewrewr</p>
+    <p>fefefwefwfe ewrwer erwerwerwrw ewrwr wwrwrwerw rwererwr ewrwerwerewrewr</p>
+    <p>fefefwefwfe ewrwer erwerwerwrw ewrwr wwrwrwerw rwererwr ewrwerwerewrewr</p>
+    <p>fefefwefwfe ewrwer erwerwerwrw ewrwr wwrwrwerw rwererwr ewrwerwerewrewr</p>
+    <p>fefefwefwfe ewrwer erwerwerwrw ewrwr wwrwrwerw rwererwr ewrwerwerewrewr</p>
+    <p>fefefwefwfe ewrwer erwerwerwrw ewrwr wwrwrwerw rwererwr ewrwerwerewrewr</p>
+
+    <h1><b>Lorem ipsum dolor sit amet</b></h1>
+    <h1><i>Lorem ipsum dolor sit amet</i></h1>
+    <h1><small>Lorem ipsum dolor sit amet</small></h1>
+    <h1>Lorem ipsum dolor<sub>sit amet</sub></h1>
+    <h1>Lorem ipsum dolor<sup>sit amet</sup></h1>
+    <h1><ins>Lorem ipsum dolor sit amet</ins></h1>
+    <h1><del>Lorem ipsum dolor sit amet</del></h1>
+    <hr>
+    <b>lorem ipsum dolor sit amet</b>
+
+</body>
+</html>
