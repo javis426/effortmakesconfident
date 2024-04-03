@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <header>
+        <img src="logo_youtube.png" width="150">    
+    </header>
+    
+    <hr>
+
+    <video controls="controls" width="300">
+        <source src="video1.mp4" type="video/mp3" >
+    </video>
+</body>
+
+<body>
+    <h3>제목: 오징어게임 수상!!</h3>
+</body>
+
+<body>
+    <table>
+    <tr>
+    <form>
+        <label for="name">User ID</label>
+        <input id="name" type="text">
+    </form>
+    </tr>   
+
+    <tr>
+    <td></td>
+    <td>
+    <a href="#">취소</a>
+    <input type="submit" value="등록">
+    </td>
+    </tr>
+   
+
+    <tr>
+    <td>사용자1:</td>
+    <td>답글 테스트입니다~</td>
+    </tr>
+    
+    <tr>
+        <td>사용자2:</td>
+        <td>오징어게임~</td>
+    </tr>
+    
+    
+    <tr>
+        <td>사용자3:</td>
+        <td>올라</td>
+    </tr>
+    </table>
+
+
+</body>
+</html>
