@@ -1,0 +1,180 @@
+Microsoft Windows [Version 10.0.22631.3296]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\binib>cd..
+
+C:\Users>cd..
+
+C:\>sqlite
+'sqlite'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+C:\>dir
+ C 드라이브의 볼륨에는 이름이 없습니다.
+ 볼륨 일련 번호: 44A6-F85C
+
+ C:\ 디렉터리
+
+2023-09-30  오전 06:47           112,240 appverifUI.dll
+2024-01-14  오후 06:10    <DIR>          C_study
+2023-09-19  오후 05:03            12,288 DumpStack.log
+2023-01-13  오후 08:31    <DIR>          Intel
+2024-04-02  오전 11:51    <DIR>          MalwareZero
+2024-04-02  오전 11:47        10,607,858 MalwareZero.zip
+2018-05-12  오후 04:29    <DIR>          mingw64
+2022-05-07  오후 02:24    <DIR>          PerfLogs
+2024-01-15  오후 12:00    <DIR>          Program Files
+2024-01-15  오후 05:09    <DIR>          Program Files (x86)
+2024-04-02  오전 11:53    <DIR>          Quarantine_MZ
+2024-04-01  오후 04:41    <DIR>          sqlite
+2023-03-04  오후 06:29    <DIR>          Temp
+2023-10-15  오후 03:51    <DIR>          Users
+2023-09-30  오전 06:46            66,216 vfcompat.dll
+2024-03-17  오후 02:10    <DIR>          Windows
+               4개 파일          10,798,602 바이트
+              12개 디렉터리  120,407,937,024 바이트 남음
+
+C:\>cd sqlite
+
+C:\sqlite>sqlite_shell
+'sqlite_shell'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+C:\sqlite>sqlite-shell
+'sqlite-shell'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+C:\sqlite>cd sqlite_shell
+
+C:\sqlite\sqlite_shell>sqlite.exe test db
+'sqlite.exe'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는
+배치 파일이 아닙니다.
+
+C:\sqlite\sqlite_shell>sqlite3.exe test db
+Error: in prepare, near "db": syntax error
+  db
+  ^--- error here
+
+C:\sqlite\sqlite_shell>sqlite3.exe test.db
+SQLite version 3.45.2 2024-03-12 11:06:23 (UTF-16 console I/O)
+Enter ".help" for usage hints.
+sqlite> .database
+main: C:\sqlite\sqlite_shell\test.db r/w
+sqlite> CREATE TABLE member(
+(x1...> no INTEGER PRIMARY KEY,
+(x1...> user_id VARCHAR(20),
+(x1...> name VARCHAR(20),
+(x1...> user_pw VARCHAR(20)
+(x1...> date DATA
+(x1...> );
+Parse error: near "date": syntax error
+  ARCHAR(20), name VARCHAR(20), user_pw VARCHAR(20) date DATA );
+                                      error here ---^
+sqlite> CREATE TABLE member(
+(x1...> no INTEGER PRIMARY KEY,
+(x1...> user_id VARCHAR(20),
+(x1...> name VARCHAR(20),
+(x1...> user_pw VARCHAR(20),
+(x1...> email VARCHAR(40),
+(x1...> date DATA
+(x1...> );
+sqlite> .table
+member
+sqlite> INSERT INTO member(user_id, name, user_pw, email, date)
+   ...> VALUES('yugin','han','baby!','baby123@',
+(x1...> DATETIME('NOW','LOCALTIME')
+(x1...> );
+sqlite> SELECT*FROM member;
+1|yugin|han|baby!|baby123@|2024-04-08 12:54:12
+sqlite> select*from member WHERE user_id = 'yugin';
+1|yugin|han|baby!|baby123@|2024-04-08 12:54:12
+sqlite> SELECT*FROM memeber WHERE user_id = 'yuuugin';
+Parse error: no such table: memeber
+sqlite> .head on
+sqlite> .mode column
+sqlite> SELECT*FROM member;
+no  user_id  name  user_pw  email     date
+--  -------  ----  -------  --------  -------------------
+1   yugin    han   baby!    baby123@  2024-04-08 12:54:12
+sqlite> .head on
+sqlite> .mode column
+sqlite> SELECT*FROM member;
+no  user_id  name  user_pw  email     date
+--  -------  ----  -------  --------  -------------------
+1   yugin    han   baby!    baby123@  2024-04-08 12:54:12
+sqlite> CREATE TABLE admin(
+(x1...> no INTEGER PRIMARY KEY,
+(x1...> id VARCHAR(20),
+(x1...> PW VARCHAR(20),
+(x1...> );
+Parse error: near ")": syntax error
+  EGER PRIMARY KEY, id VARCHAR(20), PW VARCHAR(20), );
+                                      error here ---^
+sqlite> DROP TABLE admin
+   ...> .table
+   ...> CREATE TABLE admin(
+(x1...> no INTEGAR PRIMARY KEY,
+(x1...> id VARCHAR(20),
+(x1...> pw VARCHAR(20),
+(x1...> );
+Parse error: near "table": syntax error
+  DROP TABLE admin .table CREATE TABLE admin( no INTEGAR PRIMARY KEY, id VARCHAR
+                    ^--- error here
+sqlite> CREATE TABLE admin(
+(x1...> no INTEGER PRIMARY KEY
+(x1...> id VARCHAR(20),
+(x1...> pw VARCHAR(20)
+(x1...> );
+Parse error: near "id": syntax error
+  CREATE TABLE admin( no INTEGER PRIMARY KEY id VARCHAR(20), pw VARCHAR(20) );
+                               error here ---^
+sqlite> CREATE TABLE admin(
+(x1...> no INTEGER PRIMARY KEY,
+(x1...> id VARCHAR(20),
+(x1...> pw VARCHAR(20)
+(x1...> );
+sqlite> SELECTE*FROM admin;
+Parse error: near "SELECTE": syntax error
+  SELECTE*FROM admin;
+  ^--- error here
+sqlite> SELECT*FROM admin;
+sqlite> INSERT INTO admin (id, pw) VALUES('superadmin', 'admin!!')
+   ...> SELECT*FROM admin;
+Parse error: near "SELECT": syntax error
+  TO admin (id, pw) VALUES('superadmin', 'admin!!') SELECT*FROM admin;
+                                      error here ---^
+sqlite> SELECT*FROM admin
+   ...> cd
+   ...> SELECT*FROM admin;
+Parse error: near "SELECT": syntax error
+  SELECT*FROM admin cd SELECT*FROM admin;
+                       ^--- error here
+sqlite> SELECT FROM admin;
+Parse error: near "FROM": syntax error
+  SELECT FROM admin;
+         ^--- error here
+sqlite> SELECT*FROM admin;
+sqlite> INSERT INTO admin (id, pw) VALUES('ssadmin','admin!!');
+sqlite> SELECT*FROM admin;
+no  id       pw
+--  -------  -------
+1   ssadmin  admin!!
+sqlite> .table
+admin   member
+sqlite> SELECT*FROM member UNION SELECT*FROM admin;
+Parse error: SELECTs to the left and right of UNION do not have the same number of result columns
+sqlite> SELECT user_id, user_pw FREOM member UNION SELECT id, pw FROM admin;
+Parse error: near "member": syntax error
+  SELECT user_id, user_pw FREOM member UNION SELECT id, pw FROM admin;
+                  error here ---^
+sqlite> SELECT user_id, user_pw FREOM member UNION SELECT id, pw FROM admin;
+
+Parse error: near "member": syntax error
+  SELECT user_id, user_pw FREOM member UNION SELECT id, pw FROM admin;
+                  error here ---^
+sqlite> SELECT user_id, user_pw FROM member UNION SELECT id,pw FROM admin;
+user_id  user_pw
+-------  -------
+ssadmin  admin!!
+yugin    baby!
+sqlite> ^A^A
